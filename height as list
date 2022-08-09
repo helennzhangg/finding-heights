@@ -1,0 +1,16 @@
+height = ["5'11", "6'1", "5'5", "6'10"]
+
+#making the list into a new list in inches
+height_inches = []
+
+for z in height:
+  y = z.split("'")
+  feet = y[0]
+  inches = y[1]
+  feet_in_inches = float(feet) * 12
+  inches = float(inches)
+  total_feet_in_inches = feet_in_inches + inches
+  #append allows you to add on after the code
+  height_inches.append(total_feet_in_inches)
+
+print(height_inches)
