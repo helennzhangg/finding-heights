@@ -1,0 +1,25 @@
+#functions 
+height_1 = ["5'11", "6'1", "5'5", "6'10"]
+height_2 = ["5'10", "6'5", "5'0", "6'0"]
+height_3 = ["5'5", "5'1", "5'3", "5'7"]
+
+def find_avg_height(height_list):
+  height_inches = []
+
+  for z in height_list:
+    y = z.split("'")
+    feet = y[0]
+    inches = y[1]
+    feet_in_inches = float(feet) * 12
+    inches = float(inches)
+    total_feet_in_inches = feet_in_inches + inches
+    
+    height_inches.append(total_feet_in_inches)
+
+    average_height = sum (height_inches) / len(height_inches)
+  print(average_height)
+
+#refer back to beginning function
+find_avg_height(height_1)
+find_avg_height(height_2)
+find_avg_height(height_3)
