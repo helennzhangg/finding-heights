@@ -1,0 +1,11 @@
+height = ["5'11", "6'1", "5'5", "6'10"]
+
+#for loops allow you to block up a code and repeat it many times
+for z in height:
+  y = z.split("'")
+  feet = y[0]
+  inches = y[1]
+  feet_in_inches = float(feet) * 12
+  inches = float(inches)
+  total_feet_in_inches = feet_in_inches + inches
+  print(total_feet_in_inches)
