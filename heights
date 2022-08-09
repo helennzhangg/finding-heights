@@ -1,0 +1,23 @@
+#create a new list from the one below by convetering each height to inches 
+height = ["5'11", "6'1", "5'5", "6'10"]
+
+#lists start at 0 so 0 = 5'11, 1 = 6'1, etc
+x = height [0]
+#split allows a split between the list to split the height and inches
+y = x.split("'")
+#output for [0] is ['5','11']
+
+feet = y[0]
+inches = y[1]
+
+#float turns the list into an int
+#float is the same as int but it has decimals so instead of 5, it would be 5.0
+#multiply by 12 beaches 1 foot = 12 inches
+feet_in_inches = float(feet) * 12
+#float turns the list into an int
+inches = float(inches)
+
+#this parts adds the feet in inches to inches for the total
+total_feet_in_inches= feet_in_inches + inches
+
+print (total_feet_in_inches, "inches")
